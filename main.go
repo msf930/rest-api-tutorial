@@ -83,5 +83,6 @@ func main() {
 	mux.Handle("/graphql", h)
 
 	log.Println("Server running on http://localhost:8082")
-	log.Fatal(http.ListenAndServe(":8082", enableCORS(mux)))
+	// log.Fatal(http.ListenAndServe(":8082", enableCORS(mux)))
+	log.Fatal(http.ListenAndServe("0.0.0.0:8082", nil))
 }
