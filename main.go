@@ -84,5 +84,5 @@ func main() {
 
 	log.Println("Server running on http://localhost:8082")
 	// log.Fatal(http.ListenAndServe(":8082", enableCORS(mux)))
-	log.Fatal(http.ListenAndServe("44.251.126.242:8082", enableCORS(mux)))
+	log.Fatal(http.ListenAndServe("0.0.0.0:8082", enableCORS(mux)))
 }
